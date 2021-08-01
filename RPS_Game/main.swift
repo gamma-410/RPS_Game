@@ -2,7 +2,7 @@
 //  main.swift
 //  RPS_Game
 //
-//  Created by trentrash on 2021/08/02.
+//  Created by moka on 2021/08/02.
 //
 
 import Foundation
