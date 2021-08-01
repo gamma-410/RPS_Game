@@ -9,15 +9,49 @@ import Foundation
 
 
 class RPS_Game {
-    
+
     // Game_run MainFunc()
     func Game_run(){
+        print(">> ✊(r)✋(p)✌️(s)を選択してください。")
+        let user_answer_before = readLine()
+        
+        switch user_answer_before {
+        case "r":
+            let user_answer_after = user_answer_before?.replacingOccurrences(of: "r", with: "✊")
+            let new_answer = user_answer_after ?? ""
+            print("あなた: \(new_answer)を出しました。")
+            
+        case "p":
+            let user_answer_after = user_answer_before?.replacingOccurrences(of: "p", with: "✋")
+            let new_answer = user_answer_after ?? ""
+            print("あなた: \(new_answer)を出しました。")
+            
+        case "s":
+            let user_answer_after = user_answer_before?.replacingOccurrences(of: "s", with: "✌️")
+            let new_answer = user_answer_after ?? ""
+            print("あなた: \(new_answer)を出しました。")
+        default:
+            print("入力した値が合っていません。✊(r)✋(p)✌️(s)を選択してください。")
+            return Game_run()
+        }
+        
+        let RPS = ["✊", "✋", "✌️"]
+        let swift_answer = RPS.randomElement()
+        print("SWIFT: \(swift_answer ?? "")を出しました。")
+        
+        let user_answer_after = user_answer_before?.replacingOccurrences(of: "r", with: "✊")
+        let user_answer = user_answer_after ?? ""
+        
+        if user_answer == swift_answer {
+            print("結果: あいこです。")
+            return Game_run()
+        }
         
     }
     
     // Game_run StartFunc()
     func start() {
-        print("RPS_Game (開始:s / 終了:e)")
+        print(">> RPS_Game (開始:s / 終了:e)")
         let Text:String = readLine() ?? ""
         
         switch Text {
@@ -27,7 +61,7 @@ class RPS_Game {
             case "e":
                 print("プログラムを終了します。")
             default:
-                print("入力した値が合っていません、どちらかを選択してください。")
+                print(">> 入力した値が合っていません、どちらかを選択してください。")
                 return start()
         }
     }
