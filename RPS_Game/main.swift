@@ -13,7 +13,7 @@ class RPS_Game {
     // Game_run MainFunc()
     func Game_run(){
         
-        print(">> ✊(r)✋(p)✌️(s)を選択してください。")
+        print(">> ✊(r)✋(p)✌️(s)を選択してください。(終了:e)")
         let user_answer_before = readLine()
         
         switch user_answer_before {
@@ -31,6 +31,10 @@ class RPS_Game {
             let user_answer_after = user_answer_before?.replacingOccurrences(of: "s", with: "✌️")
             let new_answer = user_answer_after ?? ""
             print("あなた: \(new_answer)を出しました。")
+        
+        case "e":
+            print("プログラムを終了します。")
+            exit(0)
         default:
             print("入力した値が合っていません。✊(r)✋(p)✌️(s)を選択してください。")
             return Game_run()
@@ -55,6 +59,7 @@ class RPS_Game {
                 Game_run()
             case "e":
                 print("プログラムを終了します。")
+                exit(0)
             default:
                 print(">> 入力した値が合っていません、どちらかを選択してください。")
                 return start()
