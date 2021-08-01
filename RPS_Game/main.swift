@@ -16,11 +16,8 @@ func start() {
             print("ゲームを開始します。")
         case "e":
             print("プログラムを終了します。")
-        case "":
-            print("どちらかを選択してください。")
-            return start()
         default:
-            print("入力した値が合っていません。")
+            print("入力した値が合っていません、どちらかを選択してください。")
             return start()
     }
 }
