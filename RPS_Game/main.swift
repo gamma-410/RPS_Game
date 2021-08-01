@@ -12,6 +12,7 @@ class RPS_Game {
 
     // Game_run MainFunc()
     func Game_run(){
+        
         print(">> ✊(r)✋(p)✌️(s)を選択してください。")
         let user_answer_before = readLine()
         
@@ -39,14 +40,8 @@ class RPS_Game {
         let swift_answer = RPS.randomElement()
         print("SWIFT: \(swift_answer ?? "")を出しました。")
         
-        let user_answer_after = user_answer_before?.replacingOccurrences(of: "r", with: "✊")
-        let user_answer = user_answer_after ?? ""
         
-        if user_answer == swift_answer {
-            print("結果: あいこです。")
-            return Game_run()
-        }
-        
+        return Game_run()
     }
     
     // Game_run StartFunc()
