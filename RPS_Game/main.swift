@@ -10,12 +10,12 @@ import Foundation
 
 class RPS_Game {
     
-    // Game_run MainFunc
+    // Game_run MainFunc()
     func Game_run(){
         
     }
 
-    // Game?run StartFunc
+    // Game_run StartFunc()
     func start() {
         print("RPS_Game (開始:s / 終了:e)")
         let Text:String = readLine() ?? ""
