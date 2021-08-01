@@ -9,12 +9,10 @@ import Foundation
 
 
 class RPS_Game {
-    
     // Game_run MainFunc()
     func Game_run(){
         
     }
-
     // Game_run StartFunc()
     func start() {
         print("RPS_Game (開始:s / 終了:e)")
@@ -31,7 +29,6 @@ class RPS_Game {
                 return start()
         }
     }
-    
 }
 
 var game = RPS_Game()
