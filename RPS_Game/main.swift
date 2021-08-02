@@ -40,10 +40,43 @@ class RPS_Game {
             return Game_run()
         }
         
+        
         let RPS = ["✊", "✋", "✌️"]
         let swift_answer = RPS.randomElement()
         print("SWIFT: \(swift_answer ?? "")を出しました。")
         
+        
+        switch [user_answer_before, swift_answer] {
+        // AIKO!
+        case ["r", "✊"]:
+            print("AIKO!")
+        case ["p", "✋"]:
+            print("AIKO!")
+        case ["s", "✌️"]:
+            print("AIKO!")
+            
+        // ✊Win!
+        case ["r", "✌️"]:
+            print("Your win!")
+        case ["r", "✋"]:
+            print("Your defeat...")
+            
+        // ✋Win!
+        case ["p", "✊"]:
+            print("Your win!")
+        case ["p", "✌️"]:
+            print("Your defeat...")
+            
+        // ✌️Win!
+        case ["s", "✋"]:
+            print("Your win!")
+        case ["s", "✊"]:
+            print("Your defeat...")
+            
+        // 未知じゃね????
+        default:
+            print("知らんよ")
+        }
         
         return Game_run()
     }
