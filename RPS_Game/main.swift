@@ -9,7 +9,9 @@ import Foundation
 
 
 class RPS_Game {
-
+    
+    var score = 0
+    
     // Game_run MainFunc()
     func Game_run(){
         
@@ -47,31 +49,58 @@ class RPS_Game {
         
         
         switch [user_answer_before, swift_answer] {
-        // AIKO!
+        // DRAW!
         case ["r", "✊"]:
-            print(">>> DRAW! <<<")
+            print(">>> 🤝 DRAW! <<<")
+            score = score + 10
+            UserDefaults.standard.setValue(score, forKey: "Int")
+            print("🎉 Score: \(score)")
         case ["p", "✋"]:
-            print(">>> DRAW! <<<")
+            print(">>> 🤝 DRAW! <<<")
+            score = score + 10
+            UserDefaults.standard.setValue(score, forKey: "Int")
+            print("🎉 Score: \(score)")
         case ["s", "✌️"]:
-            print(">>> DRAW! <<<")
+            print(">>> 🤝 DRAW! <<<")
+            score = score + 10
+            UserDefaults.standard.setValue(score, forKey: "Int")
+            print("🎉 Score: \(score)")
             
         // ✊Win!
         case ["r", "✌️"]:
-            print(">> Your win! <<")
+            print(">> 🏆 Your win! <<")
+            score = score + 20
+            UserDefaults.standard.setValue(score, forKey: "Int")
+            print("🎉 Score: \(score)")
         case ["r", "✋"]:
-            print(">> Your defeat... <<")
+            print(">> 😢 Your defeat... <<")
+            score = score + 5
+            UserDefaults.standard.setValue(score, forKey: "Int")
+            print("🎉 Score: \(score)")
             
         // ✋Win!
         case ["p", "✊"]:
-            print(">> Your win! <<")
+            print(">> 🏆 Your win! <<")
+            score = score + 20
+            UserDefaults.standard.setValue(score, forKey: "Int")
+            print("🎉 Score: \(score)")
         case ["p", "✌️"]:
-            print(">> Your defeat... <<")
+            print(">> 😢 Your defeat... <<")
+            score = score + 5
+            UserDefaults.standard.setValue(score, forKey: "Int")
+            print("🎉 Score: \(score)")
             
         // ✌️Win!
         case ["s", "✋"]:
-            print(">> Your win! <<")
+            print(">> 🏆 Your win! <<")
+            score = score + 20
+            UserDefaults.standard.setValue(score, forKey: "Int")
+            print("🎉 Score: \(score)")
         case ["s", "✊"]:
-            print(">> Your defeat... <<")
+            print(">> 😢 Your defeat... <<")
+            score = score + 5
+            UserDefaults.standard.setValue(score, forKey: "Int")
+            print("🎉 Score: \(score)")
             
         // ????
         default:
