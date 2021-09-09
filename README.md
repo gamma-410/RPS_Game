@@ -1,17 +1,17 @@
 # RPS_Game
-Consoleで実行できるじゃんけん<br>
-## 開始方法
-<code>s</code>...✊じゃんけんプログラムを開始<br>
-<code>e</code>...✊じゃんけんプログラムを終了<br>
-## ゲーム操作方法
-<code>r</code>...✊グーを出します。<br>
-<code>p</code>...✋パーを出します。<br>
-<code>s</code>...✌️チョキを出します。<br>
-<code>e</code>...✊じゃんけんプログラムを終了<br>
-## スコアについて
-スコアは めざましテレビ の めざましじゃんけん で用いられているポイント数を使用しました。<br>
-<code>🎉 Score: 20</code>...勝ち<br>
-<code>🎉 Score: 10</code>...あいこ<br>
-<code>🎉 Score: 5</code>...負け<br>
-<br><br>
+Rock-paper-scissors that can be executed on the Console <br>
+## How to get started
+<code>s</code> ... ✊ Start the rock-paper-scissors program <br>
+<code>e</code> ... ✊ Exit the rock-paper-scissors program <br>
+## Game operation method
+<code>r</code> ... ✊ Goo. <br>
+<code>p</code> ... ✋ Brings out a par. <br>
+<code>s</code> ... ✌️ Play rock-paper-scissors. <br>
+<code>e</code> ... ✊ Exit the rock-paper-scissors program <br>
+## About the score
+For the score, we used the number of points used in Mezamashi Janken on Mezamashi TV. <br>
+<code> 🎉 Score: 20 </code> ... Win <br>
+<code> 🎉 Score: 10 </code> ... Aiko <br>
+<code> 🎉 Score: 5 </code> ... Losing <br>
+<br> <br>
 (c) Copyright 2021 もか。(moka)
