@@ -10,8 +10,8 @@ Rock-paper-scissors that can be executed on the Console <br>
 <code>e</code> ... ✊ Exit the rock-paper-scissors program <br>
 ## About the score
 For the score, we used the number of points used in Mezamashi Janken on Mezamashi TV. <br>
-<code> 🎉 Score: 20 </code> ... Win <br>
-<code> 🎉 Score: 10 </code> ... Aiko <br>
-<code> 🎉 Score: 5 </code> ... Losing <br>
+<code>🎉 Score: 20</code> ... Win <br>
+<code>🎉 Score: 10</code> ... Aiko <br>
+<code>🎉 Score: 5</code> ... Losing <br>
 <br> <br>
 (c) Copyright 2021 もか。(moka)
