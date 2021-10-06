@@ -1,5 +1,5 @@
 # RPS_Game
-Rock-paper-scissors that can be executed on the Console <br>
+Rock-paper-scissors that can be executed on the Console.<br>
 ## How to get started
 <code>s</code> ... ✊ Start the rock-paper-scissors program <br>
 <code>e</code> ... ✊ Exit the rock-paper-scissors program <br>
